@@ -1201,12 +1201,12 @@
 		BF3946811CB9EFC700DFE088 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BFBBBE161CBE859A00817DCB /* Menu */,
 				BFBF6DAC1CC276A00083235B /* File */,
 				BF403DBF1CC2321400441A12 /* More */,
 				BFBBBE241CBE85EB00817DCB /* Measure */,
 				BF88BBE81D9BC9070038C90A /* Detail */,
 				BFBBBE1D1CBE85A400817DCB /* Scan */,
-				BFBBBE161CBE859A00817DCB /* Menu */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1435,6 +1435,8 @@
 				BF849E9D1DEC0CB300BBC471 /* VTDialView_8238.m */,
 				BF849E9E1DEC0CB300BBC471 /* VTDialView_C052.h */,
 				BF849E9F1DEC0CB300BBC471 /* VTDialView_C052.m */,
+				BF849ECA1DEC0F5800BBC471 /* VTMeasureView.h */,
+				BF849ECB1DEC0F5800BBC471 /* VTMeasureView.m */,
 				BF849EA01DEC0CB300BBC471 /* VTMeasureView_450B.h */,
 				BF849EA11DEC0CB300BBC471 /* VTMeasureView_450B.m */,
 				BF849EA31DEC0CB300BBC471 /* VTMeasureView_453B.h */,
@@ -1445,8 +1447,6 @@
 				BF849EA91DEC0CB300BBC471 /* VTMeasureView_C052.h */,
 				BF849EAA1DEC0CB300BBC471 /* VTMeasureView_C052.m */,
 				BF849EAB1DEC0CB300BBC471 /* VTMeasureView_C052.xib */,
-				BF849ECA1DEC0F5800BBC471 /* VTMeasureView.h */,
-				BF849ECB1DEC0F5800BBC471 /* VTMeasureView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
