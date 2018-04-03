@@ -1,0 +1,103 @@
+/*
+ Localizable.strings
+ Multimeter
+ 
+ Created by vincent on 16/4/16.
+ Copyright © 2016年 vincent. All rights reserved.
+ */
+"文件" = "File";
+"关于" = "About";
+"帮助" = "Help";
+"更多" = "More";
+
+"输入文字" = "Input text";
+"取消" = "Cancel";
+"确定" = "Ok";
+"已连接" = "Connected";
+"已断开" = "Disconnected";
+"保存数据失败" = "Data saved fail";
+"知道了" = "Ok";
+"设备已断开" = "Bluetooth Disconnected";
+"重新连接" = "Reconnect";
+"设备连接失败" = "Connect device fail";
+"手机蓝牙未开启，请打开手机蓝牙" = "Bluetooth not connected. Please go to device settings to connect";
+
+"暂停" = "Pause";
+"接收" = "Receiving";
+"保存" = "Save";
+"分析" = "Advanced";
+"档位" = "Position";
+
+"编辑" = "Edit";
+//"保存" = "Save";
+
+"文件成功保存在'%@'中" = "Data saved as \"%@\"";
+"查看" = "View";
+
+"正在保存" = "Saving...";
+"保存成功" = "Save successfuled";
+
+"连接上次设备失败，请重新扫描" = "Reconnect to last used device - FAILED, please reconnect";
+"去扫描" = "Scan for device";
+
+"数量" = "Data";
+"模式" = "Type";
+"量程" = "Range";
+"设置" = "Setting";
+"通用" = "Common";
+"刷新列表" = "Refresh";
+
+
+"切换设备" = "Switch device";
+"语音播报" = "Audible Readings";
+"采样速率" = "Sample Rate";
+"显示" = "Data Mode Display";
+"关于" = "About";
+"重命名" = "Rename";
+"解除链接" = "Forget";
+"反馈" = "Feedback";
+"帮助" = "Help";
+
+"工具" = "Tools";
+"全部文件" = "All Files";
+
+"表格" = "Table";
+"曲线" = "Graph";
+
+"序列号" = "SN";
+"接收时间" = "Time";
+"设备ID号" = "DeviceID";
+"数值" = "Value";
+"单位" = "Unit";
+"时间差" = "Interval";
+
+"请确认表笔是否插入正确" = "Make sure the test leads are inserted properly";
+"请插入表笔" = "Insert the test leads";
+
+"撤销" = "Undo";
+"工具" = "Toolbox";
+
+"今天" = "";
+"最后更新：" = "Last update: ";
+"最后更新：无记录" = "Last update：no record";
+"下拉可以刷新" = "Pull to refresh";
+"松开立即刷新" = "Release to refresh";
+"正在刷新数据中..." = "Refresh...";
+
+"电池电量低" = "Low battery!";
+
+"更多功能" = "";
+"请把手机靠近设备" = "";
+"开始扫描设备" = "";
+"正在扫描..." = "";
+"重新搜索" = "";
+"连接设备" = "";
+"打开手机蓝牙" = "";
+"没有发现设备" = "";
+
+"采样率 %@/分钟" = "%@ per minute";
+
+"Continuity" = "";
+"1.5V Battery" = "";
+"9V Battery" = "";
+

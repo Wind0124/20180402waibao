@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Multimeter
+
+  Created by vincent on 16/4/28.
+  Copyright © 2016年 vincent. All rights reserved.
+*/
+
+CFBundleDisplayName = "Dawson";
+

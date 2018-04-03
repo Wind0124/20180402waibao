@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KV</key>
+	<string>Kilo voltio</string>
+	<key>V</key>
+	<string>voltio</string>
+	<key>mV</key>
+	<string>mili voltios </string>
+	<key>μV</key>
+	<string>micro voltio</string>
+	<key>KA</key>
+	<string>Kilo Amperios</string>
+	<key>A</key>
+	<string>Amperios</string>
+	<key>mA</key>
+	<string>Milli Amperios</string>
+	<key>μA</key>
+	<string>Micro Amperios</string>
+	<key>MHz</key>
+	<string>Mega hercios</string>
+	<key>KHz</key>
+	<string>Kilo hercio</string>
+	<key>Hz</key>
+	<string>hercio</string>
+	<key>°F</key>
+	<string>Fahrenheit</string>
+	<key>°C</key>
+	<string>centígrado</string>
+	<key>TΩ</key>
+	<string>Tera ohmios</string>
+	<key>MΩ</key>
+	<string>Mega ohmios</string>
+	<key>KΩ</key>
+	<string>Kilo ohmios</string>
+	<key>Ω</key>
+	<string>ohmios</string>
+	<key>%</key>
+	<string>Por ciento</string>
+	<key>F</key>
+	<string>Faradios</string>
+	<key>mF</key>
+	<string>Milli Faradios</string>
+	<key>μF</key>
+	<string>Micro Faradios</string>
+	<key>nF</key>
+	<string>Nano Faradios</string>
+	<key>pF</key>
+	<string>Pico Faradios </string>
+	<key>m2</key>
+	<string>metros cuadrados</string>
+	<key>ft2</key>
+	<string>pies cuadrados</string>
+	<key>X10</key>
+	<string>Multiplicar por diez</string>
+	<key>m/s</key>
+	<string>Metros por segundo</string>
+	<key>Km/s</key>
+	<string>Kilo metro por segundo</string>
+	<key>ft/s</key>
+	<string>pies cuadrados por segundo</string>
+	<key>ft/m</key>
+	<string>pies cuadrados por minuto</string>
+	<key>knots</key>
+	<string>nudos</string>
+	<key>mil/h</key>
+	<string>millas por hora</string>
+	<key>CMM</key>
+	<string>metros cúbicos por minuto</string>
+	<key>FPM</key>
+	<string>pies por minuto</string>
+	<key>CFM</key>
+	<string>pies cúbicos por minuto</string>
+	<key>CMS</key>
+	<string>metros cúbicos por segundo</string>
+	<key>nH</key>
+	<string>Nano henry</string>
+	<key>μH</key>
+	<string>Micro henry</string>
+	<key>mH</key>
+	<string>Milli henry</string>
+	<key>H</key>
+	<string>Henry</string>
+	<key>KW</key>
+	<string>Kilo vatios</string>
+	<key>W</key>
+	<string>vatios</string>
+	<key>mW</key>
+	<string>Milli vatios</string>
+	<key>μW</key>
+	<string>Micro vatios</string>
+	<key>NCV</key>
+	<string>detector de voltaje sin contacto</string>
+</dict>
+</plist>

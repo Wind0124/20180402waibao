@@ -1,0 +1,15 @@
+//
+//  Multimeter.pch
+//  Multimeter
+//
+//  Created by vincent on 16/4/10.
+//  Copyright © 2016年 vincent. All rights reserved.
+//
+
+#ifndef Multimeter_pch
+#define Multimeter_pch
+
+#import "CommonDefs.h"
+#import "UIViewController+Style.h"
+
+#endif /* Multimeter_pch */

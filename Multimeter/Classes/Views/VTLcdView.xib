@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DigifaceRegular.ttf">
+            <string>Digiface</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fye-ir-8gv" userLabel="lcdView" customClass="VTLcdView">
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80m-db-kfx">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="6z7-w1-cDY"/>
+                        <constraint firstAttribute="height" constant="21" id="Oe3-AS-8lc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2YH-at-YdX" customClass="VTLcdButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Vei-oR-y2t"/>
+                        <constraint firstAttribute="width" constant="40" id="qOK-se-qCX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="MIN">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="4.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JL6-2K-eaj" userLabel="MAX" customClass="VTLcdButton">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="4zY-Z4-GSc"/>
+                        <constraint firstAttribute="height" constant="21" id="TIL-LG-4IZ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="MAX">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="4.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOb-Ee-aAS" customClass="VTLcdButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="mKI-78-Krj"/>
+                        <constraint firstAttribute="width" constant="40" id="sOv-Fh-OSD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="H">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="4.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zD4-eg-y7B" userLabel="Ble" customClass="VTLcdButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="DZd-C1-lRT"/>
+                        <constraint firstAttribute="width" constant="40" id="cm9-fO-Cap"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="lcd_ble">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="4.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="70" text="-9.999" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-5m-c4a">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="120" id="P53-IR-uyD"/>
+                        <constraint firstAttribute="width" constant="305" id="Usb-97-7aP"/>
+                        <constraint firstAttribute="width" constant="240" id="c53-iv-8MH"/>
+                        <constraint firstAttribute="height" constant="123" id="pxg-s4-KdW"/>
+                        <constraint firstAttribute="height" constant="120" id="quM-X2-WBl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Digiface" family="Digiface" pointSize="120"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="P53-IR-uyD"/>
+                            <exclude reference="c53-iv-8MH"/>
+                            <exclude reference="quM-X2-WBl"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14117647059999999" green="0.14117647059999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zD4-eg-y7B" firstAttribute="top" secondItem="fye-ir-8gv" secondAttribute="top" constant="14" id="2q2-iv-bMy"/>
+                <constraint firstAttribute="trailing" secondItem="80m-db-kfx" secondAttribute="trailing" id="2uL-gk-gNV"/>
+                <constraint firstItem="pOb-Ee-aAS" firstAttribute="centerX" secondItem="fye-ir-8gv" secondAttribute="centerX" constant="30" id="DEl-OA-lqg"/>
+                <constraint firstItem="2YH-at-YdX" firstAttribute="centerX" secondItem="fye-ir-8gv" secondAttribute="centerX" constant="-30" id="HAQ-TS-Rk6"/>
+                <constraint firstItem="80m-db-kfx" firstAttribute="top" secondItem="7oo-5m-c4a" secondAttribute="bottom" constant="-59" id="JuH-WL-9KK"/>
+                <constraint firstAttribute="bottom" secondItem="7oo-5m-c4a" secondAttribute="bottom" id="ODi-Uu-EXp"/>
+                <constraint firstItem="JL6-2K-eaj" firstAttribute="leading" secondItem="fye-ir-8gv" secondAttribute="leading" constant="10" id="Ooo-fn-FPg"/>
+                <constraint firstItem="80m-db-kfx" firstAttribute="leading" secondItem="7oo-5m-c4a" secondAttribute="trailing" constant="4.5" id="Ous-cR-KC5"/>
+                <constraint firstAttribute="height" constant="155" id="Rd1-pr-qgr"/>
+                <constraint firstItem="JL6-2K-eaj" firstAttribute="top" secondItem="fye-ir-8gv" secondAttribute="top" constant="14" id="Uet-WY-kRH"/>
+                <constraint firstItem="80m-db-kfx" firstAttribute="leading" secondItem="7oo-5m-c4a" secondAttribute="trailing" constant="-3" id="Uji-bE-WDu"/>
+                <constraint firstItem="7oo-5m-c4a" firstAttribute="top" secondItem="80m-db-kfx" secondAttribute="bottom" constant="-41.5" id="Who-Fy-4fr"/>
+                <constraint firstItem="2YH-at-YdX" firstAttribute="top" secondItem="fye-ir-8gv" secondAttribute="top" constant="14" id="cVK-X8-lnG"/>
+                <constraint firstItem="7oo-5m-c4a" firstAttribute="centerY" secondItem="fye-ir-8gv" secondAttribute="centerY" id="fgU-DS-SZy"/>
+                <constraint firstItem="JL6-2K-eaj" firstAttribute="centerX" secondItem="fye-ir-8gv" secondAttribute="centerX" constant="10" id="gCZ-5J-sAr"/>
+                <constraint firstItem="zD4-eg-y7B" firstAttribute="leading" secondItem="pOb-Ee-aAS" secondAttribute="trailing" constant="25" id="i9Y-zH-jcS"/>
+                <constraint firstAttribute="trailing" secondItem="7oo-5m-c4a" secondAttribute="trailing" constant="42" id="j6g-jv-fGm"/>
+                <constraint firstAttribute="height" constant="100" id="ju0-2L-tdQ"/>
+                <constraint firstItem="pOb-Ee-aAS" firstAttribute="top" secondItem="fye-ir-8gv" secondAttribute="top" constant="14" id="nQr-9J-mbS"/>
+                <constraint firstAttribute="width" secondItem="fye-ir-8gv" secondAttribute="height" multiplier="82:25" id="svr-MA-U3l"/>
+                <constraint firstAttribute="bottom" secondItem="80m-db-kfx" secondAttribute="bottom" constant="13" id="vLQ-JF-53C"/>
+                <constraint firstItem="2YH-at-YdX" firstAttribute="leading" secondItem="JL6-2K-eaj" secondAttribute="trailing" constant="25" id="vWX-eK-vMR"/>
+                <constraint firstItem="7oo-5m-c4a" firstAttribute="centerX" secondItem="fye-ir-8gv" secondAttribute="centerX" id="yMk-CL-F7g"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ju0-2L-tdQ"/>
+                    <exclude reference="svr-MA-U3l"/>
+                    <exclude reference="Who-Fy-4fr"/>
+                    <exclude reference="fgU-DS-SZy"/>
+                    <exclude reference="yMk-CL-F7g"/>
+                    <exclude reference="JuH-WL-9KK"/>
+                    <exclude reference="Ous-cR-KC5"/>
+                    <exclude reference="Uji-bE-WDu"/>
+                    <exclude reference="Ooo-fn-FPg"/>
+                    <exclude reference="gCZ-5J-sAr"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bleButton" destination="zD4-eg-y7B" id="Vaw-pV-tgY"/>
+                <outlet property="holdButton" destination="pOb-Ee-aAS" id="sa4-5L-F2Q"/>
+                <outlet property="lcdLabel" destination="7oo-5m-c4a" id="FbP-h6-mt2"/>
+                <outlet property="maxButton" destination="JL6-2K-eaj" id="bcy-ov-Mvq"/>
+                <outlet property="minButton" destination="2YH-at-YdX" id="pOa-rY-m3L"/>
+                <outlet property="unitLabel" destination="80m-db-kfx" id="auh-el-HkB"/>
+            </connections>
+            <point key="canvasLocation" x="-50" y="-557"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lcd_ble" width="9" height="16"/>
+    </resources>
+</document>

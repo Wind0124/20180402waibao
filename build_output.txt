@@ -1,0 +1,402 @@
+[Info] Loading settings for scheme 'Multimeter' ... (1059 ms)
+
+=== ARCHIVE ===
+
+  xcodebuild archive Multimeter
+    Pods / RESideMenu (Release)
+      ~ Check dependencies (161 ms)
+      ~ Write auxiliary files (45 ms)
+--------------------------------------------------------------------------------
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/RESideMenu-generated-files.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/RESideMenu-own-target-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/Objects-normal/armv7
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/Objects-normal/armv7/RESideMenu.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/RESideMenu-project-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/RESideMenu-all-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/RESideMenu.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/Objects-normal/arm64
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/Objects-normal/arm64/RESideMenu.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/RESideMenu.build/RESideMenu-all-non-framework-target-headers.hmap
+--------------------------------------------------------------------------------
+      ~ Make symlink libRESideMenu.a (15 ms)
+      ~ Compile RECommonFunctions.m (487 ms)
+      ~ Compile RESideMenu-dummy.m (67 ms)
+      ~ Compile RESideMenu.m (568 ms)
+      ~ Compile UIViewController+RESideMenu.m (78 ms)
+      ~ Compile RECommonFunctions.m (1723 ms)
+      ~ Compile RESideMenu-dummy.m (2546 ms)
+      ~ Compile RESideMenu.m (473 ms)
+      ~ Compile UIViewController+RESideMenu.m (151 ms)
+      ~ Create static library libRESideMenu.a (16 ms)
+      ~ Create static library libRESideMenu.a (12 ms)
+      ~ Create universal binary libRESideMenu.a (19 ms)
+      ~ Copy RECommonFunctions.h (1 ms)
+      ~ Copy RESideMenu.h (1 ms)
+      ~ Copy UIViewController+RESideMenu.h (1 ms)
+      ~ Set owner and group of libRESideMenu.a (10 ms)
+      ~ Set mode of libRESideMenu.a (7 ms)
+      0 errored, 0 warning (7630 ms)
+
+    Pods / SVProgressHUD (Release)
+      ~ Check dependencies (160 ms)
+      ~ Write auxiliary files (54 ms)
+--------------------------------------------------------------------------------
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/SVProgressHUD-own-target-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/Objects-normal/armv7
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/Objects-normal/armv7/SVProgressHUD.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/SVProgressHUD-generated-files.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/Objects-normal/arm64
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/Objects-normal/arm64/SVProgressHUD.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/SVProgressHUD-all-non-framework-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/SVProgressHUD-all-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/SVProgressHUD-project-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/SVProgressHUD.build/SVProgressHUD.hmap
+--------------------------------------------------------------------------------
+      ~ Make symlink libSVProgressHUD.a (16 ms)
+      ~ Compile SVIndefiniteAnimatedView.m (428 ms)
+      ~ Compile SVProgressHUD-dummy.m (50 ms)
+      ~ Compile SVProgressHUD.m (689 ms)
+      ~ Compile SVRadialGradientLayer.m (81 ms)
+      ~ Compile SVIndefiniteAnimatedView.m (2781 ms)
+      ~ Compile SVProgressHUD-dummy.m (41 ms)
+      ~ Compile SVProgressHUD.m (663 ms)
+      ~ Compile SVRadialGradientLayer.m (106 ms)
+      ~ Create static library libSVProgressHUD.a (7 ms)
+      ~ Create static library libSVProgressHUD.a (8 ms)
+      ~ Create universal binary libSVProgressHUD.a (17 ms)
+      ~ Copy SVIndefiniteAnimatedView.h (0 ms)
+      ~ Copy SVProgressHUD.h (1 ms)
+      ~ Copy SVRadialGradientLayer.h (1 ms)
+      ~ Set owner and group of libSVProgressHUD.a (6 ms)
+      ~ Set mode of libSVProgressHUD.a (5 ms)
+      0 errored, 0 warning (7878 ms)
+
+    Pods / FMDB (Release)
+      ~ Check dependencies (162 ms)
+      ~ Write auxiliary files (35 ms)
+--------------------------------------------------------------------------------
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/FMDB-all-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/FMDB-project-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/FMDB-generated-files.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/FMDB.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/FMDB-own-target-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/Objects-normal/armv7
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/Objects-normal/armv7/FMDB.LinkFileList
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/Objects-normal/arm64
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/Objects-normal/arm64/FMDB.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FMDB.build/FMDB-all-non-framework-target-headers.hmap
+--------------------------------------------------------------------------------
+      ~ Make symlink libFMDB.a (15 ms)
+      ~ Compile FMDatabase.m (3131 ms)
+      ~ Compile FMDatabaseAdditions.m (1974 ms)
+      ~ Compile FMDatabasePool.m (2779 ms)
+      ~ Compile FMDatabaseQueue.m (2737 ms)
+      ~ Compile FMDB-dummy.m (1424 ms)
+      ~ Compile FMResultSet.m (250 ms)
+      ~ Compile FMDatabase.m (1896 ms)
+      ~ Compile FMDatabaseAdditions.m (1075 ms)
+      ~ Compile FMDatabasePool.m (796 ms)
+      ~ Compile FMDatabaseQueue.m (178 ms)
+      ~ Compile FMDB-dummy.m (2542 ms)
+      ~ Compile FMResultSet.m (152 ms)
+      ~ Create static library libFMDB.a (25 ms)
+      ~ Create static library libFMDB.a (23 ms)
+      ~ Create universal binary libFMDB.a (23 ms)
+      ~ Copy FMDatabase.h (1 ms)
+      ~ Copy FMDatabaseAdditions.h (0 ms)
+      ~ Copy FMDatabasePool.h (0 ms)
+      ~ Copy FMDatabaseQueue.h (1 ms)
+      ~ Copy FMDB.h (1 ms)
+      ~ Copy FMResultSet.h (0 ms)
+      ~ Set owner and group of libFMDB.a (11 ms)
+      ~ Set mode of libFMDB.a (7 ms)
+      0 errored, 0 warning (7631 ms)
+
+    Pods / Pods (Release)
+      ~ Check dependencies (4 ms)
+      ~ Write auxiliary files (3 ms)
+--------------------------------------------------------------------------------
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Pods-project-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Objects-normal/arm64
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Objects-normal/arm64/Pods.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Pods-generated-files.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Pods-all-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Pods-own-target-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Objects-normal/armv7
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Objects-normal/armv7/Pods.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Pods.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/Pods.build/Pods-all-non-framework-target-headers.hmap
+--------------------------------------------------------------------------------
+      ~ Make symlink libPods.a (5 ms)
+      ~ Compile Pods-dummy.m (40 ms)
+      ~ Compile Pods-dummy.m (40 ms)
+      ~ Create static library libPods.a (6 ms)
+      ~ Create static library libPods.a (5 ms)
+      ~ Create universal binary libPods.a (6 ms)
+      ~ Set owner and group of libPods.a (7 ms)
+      ~ Set mode of libPods.a (6 ms)
+      0 errored, 0 warning (83 ms)
+
+    Multimeter / Multimeter (Release)
+      ~ Check dependencies (8 ms)
+      ~ Write auxiliary files (7 ms)
+--------------------------------------------------------------------------------
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Multimeter-all-non-framework-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Multimeter.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Multimeter-all-target-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/PrecompiledHeaders/Multimeter-bjytvskryvvocqagbudvrexnvage
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/PrecompiledHeaders/Multimeter-bjytvskryvvocqagbudvrexnvage/Multimeter.pch.pch.hash-criteria
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Multimeter-project-headers.hmap
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/PrecompiledHeaders/Multimeter-gbatvozkxejirwbememvypzzefdj
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/PrecompiledHeaders/Multimeter-gbatvozkxejirwbememvypzzefdj/Multimeter.pch.pch.hash-criteria
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Multimeter-own-target-headers.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Script-149394865451558B21F98CB2.sh
+chmod 0755 /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Script-149394865451558B21F98CB2.sh
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Script-FA2AB669D82B3F709AD2305A.sh
+chmod 0755 /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Script-FA2AB669D82B3F709AD2305A.sh
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Objects-normal/arm64
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Objects-normal/arm64/Multimeter.LinkFileList
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Objects-normal/armv7
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Objects-normal/armv7/Multimeter.LinkFileList
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Multimeter-generated-files.hmap
+write-file /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Script-8E57449A4EA105C3ADB68E0E.sh
+chmod 0755 /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/Script-8E57449A4EA105C3ADB68E0E.sh
+--------------------------------------------------------------------------------
+      ~ Create product structure (0 ms)
+--------------------------------------------------------------------------------
+/bin/mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/InstallationBuildProductsLocation/Applications/Multimeter.app
+--------------------------------------------------------------------------------
+      ~ Make symlink Multimeter.app (8 ms)
+      ~ Run custom shell script 'Check Pods Manifest.lock' (21 ms)
+      ~ Compile data model Multimeter.xcdatamodeld (107 ms)
+      ~ Precompile Multimeter.pch (25 ms)
+      ~ Precompile Multimeter.pch (24 ms)
+      ~ Compile AppDelegate.m (1733 ms)
+      ! Compile VTBleManager.m (1170 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.m:19:17: warning: method 'centralManagerDidUpdateState:' in protocol 'CBCentralManagerDelegate' not implemented [-Wprotocol]
+@implementation VTBleManager
+                ^
+In module 'CoreBluetooth' imported from /work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.h:10:
+/xcode/Xcode7.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManager.h:224:1: note: method 'centralManagerDidUpdateState:' declared here
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central;
+^
+1 warning generated.
+--------------------------------------------------------------------------------
+      ! Compile VTPeripheralListVC.m (1577 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTPeripheralListVC.m:20:17: warning: method 'didFailToDiscoverPeripheralAtBleManager:' in protocol 'VTBleManagerDelegate' not implemented [-Wprotocol]
+@implementation VTPeripheralListVC
+                ^
+In file included from /work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTPeripheralListVC.m:10:
+/work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.h:21:1: note: method 'didFailToDiscoverPeripheralAtBleManager:' declared here
+- (void)didFailToDiscoverPeripheralAtBleManager:(VTBleManager *)manager;
+^
+/work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTPeripheralListVC.m:20:17: warning: method 'centralManagerDidUpdateState:' in protocol 'CBCentralManagerDelegate' not implemented [-Wprotocol]
+@implementation VTPeripheralListVC
+                ^
+In module 'CoreBluetooth' imported from /work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.h:10:
+/xcode/Xcode7.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManager.h:224:1: note: method 'centralManagerDidUpdateState:' declared here
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central;
+^
+2 warnings generated.
+--------------------------------------------------------------------------------
+      ~ Compile CBPeripheral+RSSI.m (1027 ms)
+      ~ Compile VTBleDataParser.m (155 ms)
+      ~ Compile XHRadarView.m (835 ms)
+      ~ Compile VTRootVC.m (548 ms)
+      ~ Compile VTBleDialModel.m (57 ms)
+      ~ Compile VTBaseViewController.m (76 ms)
+      ~ Compile VTBlePersistTool.m (192 ms)
+      ~ Compile VTBleLCDModel.m (52 ms)
+      ~ Compile XHRadarPointView.m (84 ms)
+      ! Compile VTBaseTableViewController.m (83 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Base/VTBaseTableViewController.m:43:2: warning: Incomplete implementation, return the number of sections [-W#warnings]
+#warning Incomplete implementation, return the number of sections
+ ^
+/work/ios/outsource/Multimeter/Multimeter/Classes/Base/VTBaseTableViewController.m:48:2: warning: Incomplete implementation, return the number of rows [-W#warnings]
+#warning Incomplete implementation, return the number of rows
+ ^
+2 warnings generated.
+--------------------------------------------------------------------------------
+      ! Compile VTScanVC.m (148 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTScanVC.m:50:26: warning: values of type 'NSInteger' should not be used as format arguments; add an explicit cast to 'long' instead [-Wformat]
+    NSLog(@"index: %ld", item.tag);
+                   ~~~   ^~~~~~~~
+                         (long)
+1 warning generated.
+--------------------------------------------------------------------------------
+      ~ Compile VTBleButtonModel.m (57 ms)
+      ~ Compile main.m (75 ms)
+      ~ Compile XHRadarIndicatorView.m (151 ms)
+      ~ Compile VTMeasureVC.m (220 ms)
+      ~ Compile VTDeviceCell.m (108 ms)
+      ~ Compile CBCentralManager+Console.m (71 ms)
+      ~ Compile VTLeftMenuVC.m (138 ms)
+      ~ Compile UIAlertView+Blocks.m (154 ms)
+      ~ Compile VTBaseNavigatonController.m (74 ms)
+      ! Compile VTBleManager.m (1193 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.m:19:17: warning: method 'centralManagerDidUpdateState:' in protocol 'CBCentralManagerDelegate' not implemented [-Wprotocol]
+@implementation VTBleManager
+                ^
+In module 'CoreBluetooth' imported from /work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.h:10:
+/xcode/Xcode7.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManager.h:224:1: note: method 'centralManagerDidUpdateState:' declared here
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central;
+^
+1 warning generated.
+--------------------------------------------------------------------------------
+      ~ Compile AppDelegate.m (1478 ms)
+      ! Compile VTPeripheralListVC.m (1657 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTPeripheralListVC.m:20:17: warning: method 'didFailToDiscoverPeripheralAtBleManager:' in protocol 'VTBleManagerDelegate' not implemented [-Wprotocol]
+@implementation VTPeripheralListVC
+                ^
+In file included from /work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTPeripheralListVC.m:10:
+/work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.h:21:1: note: method 'didFailToDiscoverPeripheralAtBleManager:' declared here
+- (void)didFailToDiscoverPeripheralAtBleManager:(VTBleManager *)manager;
+^
+/work/ios/outsource/Multimeter/Multimeter/Classes/Controllers/Scan/VTPeripheralListVC.m:20:17: warning: method 'centralManagerDidUpdateState:' in protocol 'CBCentralManagerDelegate' not implemented [-Wprotocol]
+@implementation VTPeripheralListVC
+                ^
+In module 'CoreBluetooth' imported from /work/ios/outsource/Multimeter/Multimeter/Classes/Utils/VTBleManager.h:10:
+/xcode/Xcode7.3.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManager.h:224:1: note: method 'centralManagerDidUpdateState:' declared here
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central;
+^
+2 warnings generated.
+--------------------------------------------------------------------------------
+      ~ Compile CBPeripheral+RSSI.m (1018 ms)
+      ~ Compile VTBleDataParser.m (159 ms)
+      ! Compile XHRadarView.m (600 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Vendor/XHRadarView/XHRadarView.m:230:31: warning: values of type 'NSInteger' should not be used as format arguments; add an explicit cast to 'long' instead [-Wformat]
+    NSLog(@"select point %d", radarPointView.tag);
+                         ~~   ^~~~~~~~~~~~~~~~~~
+                         %ld  (long)
+1 warning generated.
+--------------------------------------------------------------------------------
+      ~ Compile VTRootVC.m (265 ms)
+      ~ Compile VTBleDialModel.m (46 ms)
+      ~ Compile VTBaseViewController.m (81 ms)
+      ~ Compile VTBlePersistTool.m (209 ms)
+      ~ Compile VTBleLCDModel.m (74 ms)
+      ~ Compile XHRadarPointView.m (85 ms)
+      ! Compile VTBaseTableViewController.m (81 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Multimeter/Classes/Base/VTBaseTableViewController.m:43:2: warning: Incomplete implementation, return the number of sections [-W#warnings]
+#warning Incomplete implementation, return the number of sections
+ ^
+/work/ios/outsource/Multimeter/Multimeter/Classes/Base/VTBaseTableViewController.m:48:2: warning: Incomplete implementation, return the number of rows [-W#warnings]
+#warning Incomplete implementation, return the number of rows
+ ^
+2 warnings generated.
+--------------------------------------------------------------------------------
+      ~ Compile VTScanVC.m (143 ms)
+      ~ Compile VTBleButtonModel.m (52 ms)
+      ~ Compile main.m (66 ms)
+      ~ Compile XHRadarIndicatorView.m (125 ms)
+      ~ Compile VTMeasureVC.m (231 ms)
+      ~ Compile VTDeviceCell.m (90 ms)
+      ~ Compile CBCentralManager+Console.m (64 ms)
+      ~ Compile UIAlertView+Blocks.m (144 ms)
+      ~ Compile VTLeftMenuVC.m (116 ms)
+      ~ Compile VTBaseNavigatonController.m (70 ms)
+      ~ Link Multimeter (435 ms)
+      ~ Link Multimeter (393 ms)
+      ~ Create universal binary Multimeter (36 ms)
+      ! Compile Storyboard file Main.storyboard (10657 ms)
+--------------------------------------------------------------------------------
+2016-04-15 23:32:51.172 Interface Builder Cocoa Touch Tool[77236:17789481] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:51.837 Interface Builder Cocoa Touch Tool[77242:17789543] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:53.818 Interface Builder Cocoa Touch Tool[77246:17789578] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:55.587 Interface Builder Cocoa Touch Tool[77247:17789725] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:57.490 Interface Builder Cocoa Touch Tool[77248:17790273] Error creating notification handler for simulator graphics quality override: 1000000
+/* com.apple.ibtool.document.warnings */
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/Main.storyboard:cEH-C3-th0: warning: Segues initiated directly from view controllers must have an identifier
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/Main.storyboard:cEH-C3-th0: warning: Push segues are deprecated since iOS 8.0
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/Main.storyboard:Ffv-yd-dKQ: warning: Segues initiated directly from view controllers must have an identifier
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/Main.storyboard:Ffv-yd-dKQ: warning: Push segues are deprecated since iOS 8.0
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/Main.storyboard:VLe-5f-aVG: warning: Push segues are deprecated since iOS 8.0
+--------------------------------------------------------------------------------
+      ! Compile Storyboard file old.storyboard (5366 ms)
+--------------------------------------------------------------------------------
+2016-04-15 23:32:50.659 Interface Builder Cocoa Touch Tool[77235:17789480] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:51.073 Interface Builder Cocoa Touch Tool[77241:17789526] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:51.756 Interface Builder Cocoa Touch Tool[77243:17789544] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:52.410 Interface Builder Cocoa Touch Tool[77244:17789558] Error creating notification handler for simulator graphics quality override: 1000000
+2016-04-15 23:32:53.063 Interface Builder Cocoa Touch Tool[77245:17789568] Error creating notification handler for simulator graphics quality override: 1000000
+/* com.apple.ibtool.document.warnings */
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/old.storyboard:hef-v7-dsh: warning: Scene is unreachable due to lack of entry points and does not have an identifier for runtime access via -instantiateViewControllerWithIdentifier:.
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/old.storyboard:OTd-pp-m0F: warning: Segues initiated directly from view controllers must have an identifier
+/work/ios/outsource/Multimeter/Multimeter/Base.lproj/old.storyboard:OTd-pp-m0F: warning: Push segues are deprecated since iOS 8.0
+--------------------------------------------------------------------------------
+      ~ Compile Storyboard file LaunchScreen.storyboard (2166 ms)
+      ! Compile asset catalogs (2909 ms)
+--------------------------------------------------------------------------------
+/* com.apple.actool.document.warnings */
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset: warning: A 60x60@2x app icon is required for iPhone apps targeting iOS 7.0 and later
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset: warning: A 76x76 app icon is required for iPad apps targeting iOS 7.0 and later
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset: warning: A 76x76@2x app icon is required for iPad apps targeting iOS 7.0 and later
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset: warning: A 83.5x83.5@2x app icon is required for iPad apps targeting iOS 9.0 and later
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset/[iphone][60x60][][][2x]: warning: AppIcon.appiconset/DDM230D_logo80-2.png is 80x80 but should be 120x120.
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset/[iphone][29x29][][][2x]: warning: AppIcon.appiconset/DDM230D_logo80.png is 80x80 but should be 58x58.
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset/[iphone][60x60][][][3x]: warning: AppIcon.appiconset/DDM230D_logo120-2.png is 120x120 but should be 180x180.
+/work/ios/outsource/Multimeter/Multimeter/Assets.xcassets:./AppIcon.appiconset/[iphone][29x29][][][3x]: warning: AppIcon.appiconset/DDM230D_logo120-1.png is 120x120 but should be 87x87.
+/* com.apple.actool.compilation-results */
+/Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/InstallationBuildProductsLocation/Applications/Multimeter.app/AppIcon40x40@2x.png
+/Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/InstallationBuildProductsLocation/Applications/Multimeter.app/AppIcon40x40@3x.png
+/Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/InstallationBuildProductsLocation/Applications/Multimeter.app/Assets.car
+/Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/IntermediateBuildFilesPath/Multimeter.build/Release-iphoneos/Multimeter.build/assetcatalog_generated_info.plist
+--------------------------------------------------------------------------------
+      ~ Process Info.plist (8 ms)
+      ~ Generate Multimeter.app.dSYM (415 ms)
+      ~ Link Storyboards (71 ms)
+      ~ Run custom shell script 'Embed Pods Frameworks' (55 ms)
+--------------------------------------------------------------------------------
+mkdir -p /Users/vincent/Library/Developer/Xcode/DerivedData/Multimeter-bcsknnhdfvacgneezvzdpnhaflzk/Build/Intermediates/ArchiveIntermediates/Multimeter/BuildProductsPath/Release-iphoneos/Multimeter.app/Frameworks
+--------------------------------------------------------------------------------
+      ~ Run custom shell script 'Copy Pods Resources' (86 ms)
+--------------------------------------------------------------------------------
+/work/ios/outsource/Multimeter/Pods/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+building file list ... done
+SVProgressHUD.bundle/
+SVProgressHUD.bundle/angle-mask.png
+SVProgressHUD.bundle/angle-mask@2x.png
+SVProgressHUD.bundle/angle-mask@3x.png
+SVProgressHUD.bundle/error.png
+SVProgressHUD.bundle/error@2x.png
+SVProgressHUD.bundle/error@3x.png
+SVProgressHUD.bundle/info.png
+SVProgressHUD.bundle/info@2x.png
+SVProgressHUD.bundle/info@3x.png
+SVProgressHUD.bundle/success.png
+SVProgressHUD.bundle/success@2x.png
+SVProgressHUD.bundle/success@3x.png
+
+sent 40912 bytes  received 290 bytes  82404.00 bytes/sec
+total size is 40092  speedup is 0.97
+building file list ... done
+
+sent 262 bytes  received 20 bytes  564.00 bytes/sec
+total size is 40092  speedup is 142.17
+--------------------------------------------------------------------------------
+      ~ Strip Multimeter (22 ms)
+      ~ Set owner and group of Multimeter.app (10 ms)
+      ~ Set mode of Multimeter.app (9 ms)
+      ~ Process product packaging (0 ms)
+      ~ Touch Multimeter.app (6 ms)
+      ~ Process product packaging (4 ms)
+      ~ Sign Multimeter.app (205 ms)
+      ! Validate Multimeter.app (1 ms)
+--------------------------------------------------------------------------------
+warning: All interface orientations must be supported unless the app requires full screen.
+--------------------------------------------------------------------------------
+      ~ Touch Multimeter.app.dSYM (5 ms)
+      0 errored, 29 warning (16457 ms)
+
+
+
+** ARCHIVE SUCCEEDED ** (25313 ms)
+

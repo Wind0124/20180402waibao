@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Table DetailVC-->
+        <scene sceneID="xE2-uV-nbr">
+            <objects>
+                <viewController storyboardIdentifier="VTTableDetailVC" id="h43-gs-BWY" customClass="VTTableDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MmH-zD-4FW"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hne-9m-ymf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FGQ-ID-9dc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIX-jS-wD2" userLabel="operationView">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2h6-kL-29L" userLabel="plotBtn" customClass="VTOperationButton">
+                                        <rect key="frame" x="212" y="0.0" width="63" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Plot" image="btn_plot">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="selected" image="btn_plot"/>
+                                        <state key="highlighted" image="btn_plot">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPlotBtnClick:" destination="h43-gs-BWY" eventType="touchUpInside" id="Gyi-mo-iJv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhR-NO-2kU" userLabel="chartBtn" customClass="VTOperationButton">
+                                        <rect key="frame" x="101" y="0.0" width="68" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="ACq-eY-z3D"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Sheet" image="btn_chart_hl"/>
+                                        <state key="highlighted" title="暂停" image="btn_pause_sel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2h6-kL-29L" firstAttribute="baseline" secondItem="fhR-NO-2kU" secondAttribute="firstBaseline" id="3ht-hC-pTX"/>
+                                    <constraint firstAttribute="height" constant="100" id="5nr-ye-hCc"/>
+                                    <constraint firstItem="2h6-kL-29L" firstAttribute="top" secondItem="fhR-NO-2kU" secondAttribute="top" id="BiF-id-Buq"/>
+                                    <constraint firstAttribute="bottom" secondItem="2h6-kL-29L" secondAttribute="bottom" id="KRp-GQ-git"/>
+                                    <constraint firstItem="fhR-NO-2kU" firstAttribute="leading" secondItem="zIX-jS-wD2" secondAttribute="leading" constant="101" id="Wnq-6m-BPl"/>
+                                    <constraint firstItem="2h6-kL-29L" firstAttribute="firstBaseline" secondItem="fhR-NO-2kU" secondAttribute="baseline" id="YfK-tJ-P20"/>
+                                    <constraint firstItem="2h6-kL-29L" firstAttribute="leading" secondItem="fhR-NO-2kU" secondAttribute="trailing" constant="43" id="ewM-sr-azL"/>
+                                    <constraint firstItem="2h6-kL-29L" firstAttribute="top" secondItem="zIX-jS-wD2" secondAttribute="top" id="riy-sP-zoe"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xBP-6W-Q9j" userLabel="gridView" customClass="VTGridDataView">
+                                <rect key="frame" x="0.0" y="84" width="375" height="483"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xBP-6W-Q9j" firstAttribute="leading" secondItem="FGQ-ID-9dc" secondAttribute="leading" id="2r5-47-lIL"/>
+                            <constraint firstAttribute="trailing" secondItem="xBP-6W-Q9j" secondAttribute="trailing" id="N4t-Ll-2Mn"/>
+                            <constraint firstItem="xBP-6W-Q9j" firstAttribute="top" secondItem="MmH-zD-4FW" secondAttribute="bottom" constant="20" id="NAu-8V-dqn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zIX-jS-wD2" secondAttribute="trailing" constant="-16" id="aqW-ve-bba"/>
+                            <constraint firstItem="zIX-jS-wD2" firstAttribute="top" secondItem="xBP-6W-Q9j" secondAttribute="bottom" id="kuW-gj-gqm"/>
+                            <constraint firstItem="zIX-jS-wD2" firstAttribute="leading" secondItem="FGQ-ID-9dc" secondAttribute="leadingMargin" constant="-16" id="qdk-j7-1dE"/>
+                            <constraint firstItem="Hne-9m-ymf" firstAttribute="top" secondItem="zIX-jS-wD2" secondAttribute="bottom" id="sd3-lS-m0i"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="gridView" destination="xBP-6W-Q9j" id="yIo-n8-Hms"/>
+                        <outlet property="plotButton" destination="2h6-kL-29L" id="4qX-Pc-TOW"/>
+                        <outlet property="tableButton" destination="fhR-NO-2kU" id="l7F-JL-B20"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFj-FN-vgO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1401.25" y="-2236.6733333333332"/>
+        </scene>
+        <!--Chart DetailVC-->
+        <scene sceneID="qP9-dn-8C1">
+            <objects>
+                <viewController storyboardIdentifier="VTChartDetailVC" id="fqj-sQ-DkA" customClass="VTChartDetailVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y9J-bh-hoC"/>
+                        <viewControllerLayoutGuide type="bottom" id="4mg-tV-zbD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ku8-JV-zFr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6DH-Mo-TS2" userLabel="operationView">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaF-58-gFm" userLabel="analyzeBtn" customClass="VTOperationButton">
+                                        <rect key="frame" x="212" y="0.0" width="88" height="100"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Save" image="btn_save">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <state key="highlighted" image="btn_save">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onSaveBtnClick:" destination="fqj-sQ-DkA" eventType="touchUpInside" id="acd-JF-swN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1b-Rx-WEg" userLabel="pauseBtn" customClass="VTOperationButton">
+                                        <rect key="frame" x="101" y="0.0" width="68" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="b9F-rW-VkE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="Edit" image="btn_edit"/>
+                                        <state key="highlighted" image="btn_edit">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onEditBtnClick:" destination="fqj-sQ-DkA" eventType="touchUpInside" id="3YW-NH-49H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="oaF-58-gFm" firstAttribute="firstBaseline" secondItem="Y1b-Rx-WEg" secondAttribute="baseline" id="5Qk-NI-7UA"/>
+                                    <constraint firstItem="oaF-58-gFm" firstAttribute="top" secondItem="Y1b-Rx-WEg" secondAttribute="top" id="A7g-Fv-YL6"/>
+                                    <constraint firstItem="oaF-58-gFm" firstAttribute="baseline" secondItem="Y1b-Rx-WEg" secondAttribute="firstBaseline" id="HBW-ek-4sn"/>
+                                    <constraint firstItem="oaF-58-gFm" firstAttribute="leading" secondItem="Y1b-Rx-WEg" secondAttribute="trailing" constant="43" id="K0B-y1-ovK"/>
+                                    <constraint firstAttribute="height" constant="100" id="M9b-hz-W65"/>
+                                    <constraint firstItem="Y1b-Rx-WEg" firstAttribute="leading" secondItem="6DH-Mo-TS2" secondAttribute="leading" constant="101" id="Skc-SP-g08"/>
+                                    <constraint firstItem="oaF-58-gFm" firstAttribute="top" secondItem="6DH-Mo-TS2" secondAttribute="top" id="Zfp-o2-aTN"/>
+                                    <constraint firstAttribute="bottom" secondItem="oaF-58-gFm" secondAttribute="bottom" id="iFA-3r-9xA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lsv-IO-WY2" userLabel="container">
+                                <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18821030859999999" green="0.1882497072" blue="0.18820786480000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6DH-Mo-TS2" firstAttribute="top" secondItem="lsv-IO-WY2" secondAttribute="bottom" id="3YF-Vr-QHy"/>
+                            <constraint firstItem="4mg-tV-zbD" firstAttribute="top" secondItem="6DH-Mo-TS2" secondAttribute="bottom" id="4fY-kj-Edr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6DH-Mo-TS2" secondAttribute="trailing" constant="-16" id="HpF-U0-vmc"/>
+                            <constraint firstItem="lsv-IO-WY2" firstAttribute="leading" secondItem="ku8-JV-zFr" secondAttribute="leading" id="Mao-tE-OIJ"/>
+                            <constraint firstItem="lsv-IO-WY2" firstAttribute="top" secondItem="y9J-bh-hoC" secondAttribute="bottom" id="Vgq-xz-mVQ"/>
+                            <constraint firstAttribute="trailing" secondItem="lsv-IO-WY2" secondAttribute="trailing" id="bAb-Ht-uu7"/>
+                            <constraint firstItem="6DH-Mo-TS2" firstAttribute="leading" secondItem="ku8-JV-zFr" secondAttribute="leadingMargin" constant="-16" id="rkq-2B-wte"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="containerView" destination="lsv-IO-WY2" id="PLY-92-17z"/>
+                        <outlet property="editButton" destination="Y1b-Rx-WEg" id="GHU-le-bR2"/>
+                        <outlet property="heigthContraint" destination="M9b-hz-W65" id="wRV-s8-eeD"/>
+                        <outlet property="saveButton" destination="oaF-58-gFm" id="bKa-iE-AHh"/>
+                        <outlet property="topContraint" destination="Vgq-xz-mVQ" id="XIQ-qZ-zGT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crg-VE-7MS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-954.5" y="-2218.5"/>
+        </scene>
+        <!--Measure LanscapeVC-->
+        <scene sceneID="rtC-sV-w9e">
+            <objects>
+                <viewController storyboardIdentifier="VTMeasureLanscapeVC" id="hTH-kD-c2K" customClass="VTMeasureLanscapeVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ejK-S1-jcQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="V3x-VW-31y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PUC-KH-QS7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XfO-7c-L70" userLabel="container">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XfO-7c-L70" firstAttribute="leading" secondItem="PUC-KH-QS7" secondAttribute="leading" id="9XI-qd-Lgq"/>
+                            <constraint firstItem="XfO-7c-L70" firstAttribute="top" secondItem="ejK-S1-jcQ" secondAttribute="bottom" id="IHD-IH-w3u"/>
+                            <constraint firstItem="V3x-VW-31y" firstAttribute="top" secondItem="XfO-7c-L70" secondAttribute="bottom" id="L3M-an-L0U"/>
+                            <constraint firstAttribute="trailing" secondItem="XfO-7c-L70" secondAttribute="trailing" id="iWp-Ym-9Sh"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="containerView" destination="XfO-7c-L70" id="GSd-kt-LNn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xh-99-NQ0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-529.375" y="-2237.7849999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_chart_hl" width="68" height="68"/>
+        <image name="btn_edit" width="54" height="54"/>
+        <image name="btn_pause_sel" width="68" height="68"/>
+        <image name="btn_plot" width="36" height="36"/>
+        <image name="btn_save" width="54" height="54"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

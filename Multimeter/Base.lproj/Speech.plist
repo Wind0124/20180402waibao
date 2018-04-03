@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KV</key>
+	<string>Kilo volt</string>
+	<key>V</key>
+	<string>Volt</string>
+	<key>mV</key>
+	<string>Milli volt</string>
+	<key>μV</key>
+	<string>Micro volt</string>
+	<key>KA</key>
+	<string>Kilo ampere</string>
+	<key>A</key>
+	<string>Ampere</string>
+	<key>mA</key>
+	<string>Milli ampere</string>
+	<key>μA</key>
+	<string>Micro ampere</string>
+	<key>MHz</key>
+	<string>Mega hertz</string>
+	<key>KHz</key>
+	<string>Kilo hertz</string>
+	<key>Hz</key>
+	<string>Hertz</string>
+	<key>°F</key>
+	<string>Fahrenheit</string>
+	<key>°C</key>
+	<string>Centigrade</string>
+	<key>TΩ</key>
+	<string>Tera ohm</string>
+	<key>MΩ</key>
+	<string>Mega ohm</string>
+	<key>KΩ</key>
+	<string>Kilo ohm</string>
+	<key>Ω</key>
+	<string>ohm</string>
+	<key>%</key>
+	<string>Percent</string>
+	<key>F</key>
+	<string>Fards</string>
+	<key>mF</key>
+	<string>Milli farads</string>
+	<key>μF</key>
+	<string>Micro farads</string>
+	<key>nF</key>
+	<string>Nano farads</string>
+	<key>pF</key>
+	<string>Pico farads </string>
+	<key>m2</key>
+	<string>Square meters</string>
+	<key>ft2</key>
+	<string>Square foots</string>
+	<key>X10</key>
+	<string>Times ten</string>
+	<key>m/s</key>
+	<string>Meters per second</string>
+	<key>Km/s</key>
+	<string>Kilo meter per second</string>
+	<key>ft/s</key>
+	<string>Square foots per second</string>
+	<key>ft/m</key>
+	<string>Square foots per minute</string>
+	<key>knots</key>
+	<string>Knots</string>
+	<key>mil/h</key>
+	<string>Miles per hour</string>
+	<key>CMM</key>
+	<string>Cubic meters per minute</string>
+	<key>FPM</key>
+	<string>Foot Per Minute</string>
+	<key>CFM</key>
+	<string>Cubic foots per minute</string>
+	<key>CMS</key>
+	<string>Cubic meters per second</string>
+	<key>nH</key>
+	<string>Nano henry</string>
+	<key>μH</key>
+	<string>Micro henry</string>
+	<key>mH</key>
+	<string>Milli henry</string>
+	<key>H</key>
+	<string>Henry</string>
+	<key>KW</key>
+	<string>Kilo watts</string>
+	<key>W</key>
+	<string>Watts</string>
+	<key>mW</key>
+	<string>Milli watts</string>
+	<key>μW</key>
+	<string>Micro watts</string>
+	<key>NCV</key>
+	<string>Non-contact voltage</string>
+</dict>
+</plist>

@@ -1,0 +1,39 @@
+
+/* Class = "UINavigationItem"; title = "MS8238D(Connected)"; ObjectID = "2px-lf-gQZ"; */
+"2px-lf-gQZ.title" = "MS8238D(Connected)";
+
+/* Class = "UILabel"; text = "-127dBm"; ObjectID = "4Mc-Gj-noj"; */
+"4Mc-Gj-noj.text" = "-127dBm";
+
+/* Class = "UIButton"; normalTitle = "Restart scan device"; ObjectID = "Dcr-Vr-Sel"; */
+"Dcr-Vr-Sel.normalTitle" = "重新搜索";
+
+/* Class = "UINavigationItem"; title = "Connect device"; ObjectID = "GfY-UO-Gkb"; */
+"GfY-UO-Gkb.title" = "连接设备";
+
+/* Class = "UILabel"; text = "Go to setting to turn on bluetooth"; ObjectID = "Ih2-RD-M6Z"; */
+"Ih2-RD-M6Z.text" = "打开蓝牙";
+
+/* Class = "UILabel"; text = "No device found"; ObjectID = "Qfq-8w-m4t"; */
+"Qfq-8w-m4t.text" = "没有发现设备";
+
+/* Class = "UITableViewController"; title = "Connect devices"; ObjectID = "RTN-Ab-UPm"; */
+"RTN-Ab-UPm.title" = "连接设备";
+
+/* Class = "UILabel"; text = "LabelMac"; ObjectID = "dmx-ph-nYz"; */
+"dmx-ph-nYz.text" = "LabelMac";
+
+/* Class = "UILabel"; text = "2012-12-04"; ObjectID = "mvz-Gu-jgH"; */
+"mvz-Gu-jgH.text" = "2012-12-04";
+
+/* Class = "UIButton"; normalTitle = "Start scan device"; ObjectID = "nvF-ce-VXA"; */
+"nvF-ce-VXA.normalTitle" = "开始扫描设备";
+
+/* Class = "UIButton"; selectedTitle = "Scanning..."; ObjectID = "nvF-ce-VXA"; */
+"nvF-ce-VXA.selectedTitle" = "正在扫描...";
+
+/* Class = "UILabel"; text = "LabelName"; ObjectID = "qhm-0A-EEf"; */
+"qhm-0A-EEf.text" = "LabelName";
+
+/* Class = "UILabel"; text = "Make sure device is within range"; ObjectID = "rCK-69-7Tm"; */
+"rCK-69-7Tm.text" = "请把手机靠近设备";

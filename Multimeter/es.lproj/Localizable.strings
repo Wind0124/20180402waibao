@@ -1,0 +1,102 @@
+/*
+ Localizable.strings
+ Multimeter
+ 
+ Created by vincent on 16/4/16.
+ Copyright © 2016年 vincent. All rights reserved.
+ */
+"文件" = "Archivo";
+"关于" = "Acerca de";
+"帮助" = "Ayuda";
+"更多" = "Más";
+
+"输入文字" = "Entrada de texto";
+"取消" = "Cancelar";
+"确定" = "Ok";
+"已连接" = "Conectado";
+"已断开" = "Desconectado";
+"保存数据失败" = "Datos fallaron archivar";
+"知道了" = "Ok";
+"设备已断开" = "Bluetooth Desconectado";
+"重新连接" = "Reconectar";
+"设备连接失败" = "Error al conectar al dispositivo";
+"手机蓝牙未开启，请打开手机蓝牙" = "Bluetooth no está conectado. Por favor, vaya a la configuración del dispositivo para conectar";
+
+"暂停" = "Pausa";
+"接收" = "Recibiendo";
+"保存" = "Archivar";
+"分析" = "Avanzado";
+"档位" = "Posición";
+
+"编辑" = "Editar";
+//"保存" = "Archivar";
+"保存成功" = "Guardado con éxito";
+
+"文件成功保存在'%@'中" = "Datos archivados como \"%@\"";
+"查看" = "Ver";
+
+"正在保存" = "Archivando...";
+
+"连接上次设备失败，请重新扫描" = "Reconectar al último dispositivo utilizado - FALLADO, por favor reconectar";
+"去扫描" = "Por favor reconecta";
+
+"数量" = "Datos";
+"模式" = "Tipo";
+"量程" = "Cobertura";
+"设置" = "Configuración";
+"通用" = "Común";
+"刷新列表" = "Actualizar";
+
+
+"切换设备" = "Cambiar el dispositivo";
+"语音播报" = "Voz";
+"采样速率" = "Frecuencia de muestreo";
+"显示" = "Seleccione el modo de datos en la pantalla";
+"关于" = "Acerca de";
+"重命名" = "Renombrar";
+"解除链接" = "Olvidar";
+"反馈" = "Retroalimentación";
+"帮助" = "Ayuda";
+
+"工具" = "Herramientas";
+"全部文件" = "Todos los archivos";
+
+"表格" = "Tabla";
+"曲线" = "Parcela";
+
+"序列号" = "SN";
+"接收时间" = "Tiempo";
+"设备ID号" = "ID";
+"数值" = "Valor";
+"单位" = "Unidad";
+"时间差" = "Intervalo";
+
+"请确认表笔是否插入正确" = "Asegúrese de que los cables de prueba están insertados correctamente";
+"请插入表笔" = "Inserte los cables de prueba";
+
+"撤销" = "Deshacer";
+"工具" = "Herramientas";
+
+"今天" = "";
+"最后更新：" = "Última actualización：";
+"最后更新：无记录" = "Última actualización; ningún registro";
+"下拉可以刷新" = "Jale para actualizar";
+"松开立即刷新" = "Soltar para actualizar";
+"正在刷新数据中..." = "Actualizando...";
+
+
+"电池电量低" = "Low battery!";
+"更多功能" = "";
+"请把手机靠近设备" = "";
+"开始扫描设备" = "";
+"正在扫描..." = "";
+"重新搜索" = "";
+"连接设备" = "";
+"打开手机蓝牙" = "";
+"没有发现设备" = "";
+
+"采样率 %@/分钟" = "%@ cada minuto";
+
+"Continuity" = "";
+"1.5V Battery" = "";
+"9V Battery" = "";
