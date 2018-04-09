@@ -1187,11 +1187,11 @@
 				BF0E26121CBA06E9005E876C /* Common */,
 				BF39468C1CB9F61800DFE088 /* Category */,
 				BF3946811CB9EFC700DFE088 /* Controllers */,
+				BF849E8E1DEC0BDF00BBC471 /* Devices */,
 				BF3946841CB9EFC700DFE088 /* Views */,
 				BF3946821CB9EFC700DFE088 /* Models */,
 				BF3946831CB9EFC700DFE088 /* Utils */,
 				BF0E25FF1CBA013D005E876C /* Vendor */,
-				BF849E8E1DEC0BDF00BBC471 /* Devices */,
 				BF12FA011CB695050009A586 /* AppDelegate.h */,
 				BF12FA021CB695050009A586 /* AppDelegate.m */,
 			);
@@ -1202,11 +1202,11 @@
 			isa = PBXGroup;
 			children = (
 				BFBBBE161CBE859A00817DCB /* Menu */,
+				BFBBBE1D1CBE85A400817DCB /* Scan */,
+				BFBBBE241CBE85EB00817DCB /* Measure */,
 				BFBF6DAC1CC276A00083235B /* File */,
 				BF403DBF1CC2321400441A12 /* More */,
-				BFBBBE241CBE85EB00817DCB /* Measure */,
 				BF88BBE81D9BC9070038C90A /* Detail */,
-				BFBBBE1D1CBE85A400817DCB /* Scan */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -1388,8 +1388,8 @@
 		BF849E8E1DEC0BDF00BBC471 /* Devices */ = {
 			isa = PBXGroup;
 			children = (
-				BF849E8F1DEC0CB300BBC471 /* Presenter */,
 				BF849E981DEC0CB300BBC471 /* Utils */,
+				BF849E8F1DEC0CB300BBC471 /* Presenter */,
 				BF849E9B1DEC0CB300BBC471 /* Views */,
 			);
 			path = Devices;
@@ -1398,6 +1398,7 @@
 		BF849E8F1DEC0CB300BBC471 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				BF470F931D9A14F100A2BC86 /* VTMeasurePresenterProtocol.h */,
 				BF849E901DEC0CB300BBC471 /* VTMeasurePresenter_450B.h */,
 				BF849E911DEC0CB300BBC471 /* VTMeasurePresenter_450B.m */,
 				BF849E921DEC0CB300BBC471 /* VTMeasurePresenter_453B.h */,
@@ -1406,7 +1407,6 @@
 				BF849E951DEC0CB300BBC471 /* VTMeasurePresenter_8238.m */,
 				BF849E961DEC0CB300BBC471 /* VTMeasurePresenter_C052.h */,
 				BF849E971DEC0CB300BBC471 /* VTMeasurePresenter_C052.m */,
-				BF470F931D9A14F100A2BC86 /* VTMeasurePresenterProtocol.h */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1767,10 +1767,10 @@
 		BFBBBE1D1CBE85A400817DCB /* Scan */ = {
 			isa = PBXGroup;
 			children = (
-				BFBBBE1E1CBE85A400817DCB /* VTPeripheralListVC.h */,
-				BFBBBE1F1CBE85A400817DCB /* VTPeripheralListVC.m */,
 				BFBBBE201CBE85A400817DCB /* VTScanVC.h */,
 				BFBBBE211CBE85A400817DCB /* VTScanVC.m */,
+				BFBBBE1E1CBE85A400817DCB /* VTPeripheralListVC.h */,
+				BFBBBE1F1CBE85A400817DCB /* VTPeripheralListVC.m */,
 			);
 			path = Scan;
 			sourceTree = "<group>";
