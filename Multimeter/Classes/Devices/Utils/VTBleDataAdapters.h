@@ -37,20 +37,19 @@
 
 
 @interface VTBleDataAdapter_450B : NSObject  <VTBleDataAdapter>
-
 @end
 
 
 @interface VTBleDataAdapter_453B : NSObject  <VTBleDataAdapter>
-
 @end
 
 
 @interface VTBleDataAdapter_C052 : NSObject  <VTBleDataAdapter>
-
 @end
 
 
 @interface VTBleDataAdapter_8238 : NSObject  <VTBleDataAdapter>
+@end
 
+@interface VTBleDataAdapter_2225A : NSObject <VTBleDataAdapter>
 @end

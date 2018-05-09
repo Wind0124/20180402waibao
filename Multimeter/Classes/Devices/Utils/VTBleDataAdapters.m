@@ -575,4 +575,152 @@ extern int g_state;
 
 @end
 
+@implementation VTBleDataAdapter_2225A
+
+@synthesize parser = _parser;
+
+- (NSString *)modelName {
+    return @"MS2225A";
+}
+
+//- (NSString *)segFunction {
+//    // 再次作兼容
+//    NSString *tempString;
+//    if (_parser.dialType == 0x10) {
+//        tempString = [NSString stringWithFormat:@"1.5V Battery"];
+//    } else if (_parser.dialType == 0x11) {
+//        tempString = [NSString stringWithFormat:@"9V Battery"];
+//    }
+//    return tempString;
+//}
+
+#if !TARGET_IPHONE_SIMULATOR
+- (NSInteger)pointPos {
+    NSInteger dialState = _parser.dialType;
+    
+//    // ncv档要兼容判断
+//    if (_parser->_lcddata.ncv_non_contact_voltage_detection) {
+//        return 2;
+//    }
+    
+    // 电流通过单位来判断
+    if (_parser->_lcddata.A) {
+        if (_parser->_lcddata.m) {
+            return 8;
+        } else if (_parser->_lcddata.u) {
+            return 7;
+        } else {
+            return 9;
+        }
+    }
+    // 二级管
+    if (_parser->_lcddata.diode || dialState == 0x18) {
+        return 3;
+    }
+    
+    if (dialState == 0x10) {
+        // 1.5v
+        return 6;
+    } else if (dialState == 0x11) {
+        // 9v
+        return 5;
+    } else if (dialState == 0x08) {
+        // 电阻
+        return 4;
+    } else if (dialState == 0x0f) {
+        // ncv
+        return 2;
+    } else if (dialState == 0x15) {
+        // V
+        return 1;
+    }
+    return 0;
+}
+#else
+extern int g_state;
+- (NSInteger)pointPos {
+    return g_state;
+}
+#endif
+
+- (CGFloat)angle {
+    CGFloat unit = M_PI*(1/9.0);
+    return [self pointPos]*unit;
+}
+
+- (NSDictionary *)getRange {
+    CGFloat max = 0, min = 0;
+    
+    LCDSegment _lcddata = self.parser->_lcddata;
+    NSInteger dialState = _parser.dialType;
+    
+    if (_lcddata.V) {
+        if (_lcddata.m) {
+            max = 1000;
+        } else {
+            max = 600;
+        }
+        if (_lcddata.dc) {
+            min = -max;
+        }
+    } else if (_lcddata.A) {
+        if (_lcddata.m) {
+            max = 1000;
+        } else if (_lcddata.u) {
+            max = 1000;
+        } else {
+            max = 10;
+        }
+        if (_lcddata.dc) {
+            min = -max;
+        }
+    } else if (_lcddata.res) {
+        if (_lcddata.M) {
+            max = 40;
+        } else if (_lcddata.k) {
+            max = 1000;
+        } else {
+            max = 1000;
+        }
+        min = 0;
+    } else if (_lcddata.F) {
+        max = 100; min = 0;
+    } else if (_lcddata.C0) {
+        max = 1000; min = -20;
+    } else if (_lcddata.F0) {
+        max = 1832; min = -4;
+    } else if (_lcddata.Hz) {
+        if (_lcddata.M) {
+            max = 10;
+        } else if (_lcddata.k) {
+            max = 1000;
+        } else {
+            max = 1000;
+        }
+        min = 0;
+    }
+    if (_lcddata.diode) {
+        max = 2.7; min = 0;
+    }
+    if (_lcddata.speaker) {
+        max = 50; min = 0;
+    }
+    if (_lcddata.hFE) {
+        max = 2000; min = 0;
+    }
+    if (dialState == 0x10) {
+        // 1.5v
+        max = 1.5; min = 0;
+    } else if (dialState == 0x11) {
+        // 9v
+        max = 9; min = 0;
+    }
+    if (_lcddata.ncv_non_contact_voltage_detection) {
+        max = 5; min = 0;
+    }
+    
+    return @{@"min": @(min), @"max": @(max)};
+}
+
+@end
 
