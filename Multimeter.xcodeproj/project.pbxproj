@@ -10,6 +10,10 @@
 		45E6D892364EC90F4DC322CA /* libPods-TestUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E90CC8C4FF56861A803A0107 /* libPods-TestUI.a */; };
 		77BFA574BFA5A80AF912E8D2 /* libPods-Multimeter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951BE03B7679E22DE54412A /* libPods-Multimeter.a */; };
 		88C4042FC38F13666157F80D /* libPods-Multimeter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9951BE03B7679E22DE54412A /* libPods-Multimeter.a */; };
+		A25E117220BBD3D000D4092A /* VTMeasurePresenter_MS2225A.m in Sources */ = {isa = PBXBuildFile; fileRef = A25E117120BBD3D000D4092A /* VTMeasurePresenter_MS2225A.m */; };
+		A25E117820BBD61800D4092A /* VTMeasureView_MS2225A.m in Sources */ = {isa = PBXBuildFile; fileRef = A25E117720BBD61800D4092A /* VTMeasureView_MS2225A.m */; };
+		A25E117C20BBE72B00D4092A /* VTMeasureView_MS2225A.xib in Resources */ = {isa = PBXBuildFile; fileRef = A25E117B20BBE72B00D4092A /* VTMeasureView_MS2225A.xib */; };
+		A25E117F20BBED9200D4092A /* VTDialView_MS2225A.m in Sources */ = {isa = PBXBuildFile; fileRef = A25E117E20BBED9200D4092A /* VTDialView_MS2225A.m */; };
 		B5B1F5981E23457900A7D9B8 /* CrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1F5971E23457900A7D9B8 /* CrcTool.m */; };
 		B5B1F5991E23488C00A7D9B8 /* CrcTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1F5971E23457900A7D9B8 /* CrcTool.m */; };
 		B5F939511E26951D00EE23C9 /* ttt.dat in Resources */ = {isa = PBXBuildFile; fileRef = B5F939501E26951D00EE23C9 /* ttt.dat */; };
@@ -482,6 +486,13 @@
 		705936FDFD6940B3D2C28B18 /* Pods-TestUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestUI/Pods-TestUI.release.xcconfig"; sourceTree = "<group>"; };
 		90DD499508B9F95D3A571F86 /* Pods-Multimeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Multimeter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Multimeter/Pods-Multimeter.release.xcconfig"; sourceTree = "<group>"; };
 		9951BE03B7679E22DE54412A /* libPods-Multimeter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Multimeter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25E117020BBD3D000D4092A /* VTMeasurePresenter_MS2225A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMeasurePresenter_MS2225A.h; sourceTree = "<group>"; };
+		A25E117120BBD3D000D4092A /* VTMeasurePresenter_MS2225A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMeasurePresenter_MS2225A.m; sourceTree = "<group>"; };
+		A25E117620BBD61800D4092A /* VTMeasureView_MS2225A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTMeasureView_MS2225A.h; sourceTree = "<group>"; };
+		A25E117720BBD61800D4092A /* VTMeasureView_MS2225A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTMeasureView_MS2225A.m; sourceTree = "<group>"; };
+		A25E117B20BBE72B00D4092A /* VTMeasureView_MS2225A.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VTMeasureView_MS2225A.xib; sourceTree = "<group>"; };
+		A25E117D20BBED9200D4092A /* VTDialView_MS2225A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDialView_MS2225A.h; sourceTree = "<group>"; };
+		A25E117E20BBED9200D4092A /* VTDialView_MS2225A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VTDialView_MS2225A.m; sourceTree = "<group>"; };
 		B5B1F5961E23457900A7D9B8 /* CrcTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrcTool.h; sourceTree = "<group>"; };
 		B5B1F5971E23457900A7D9B8 /* CrcTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrcTool.m; sourceTree = "<group>"; };
 		B5F1955C3C0795607147C3A3 /* Pods-TestUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestUI/Pods-TestUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1407,6 +1418,8 @@
 				BF849E951DEC0CB300BBC471 /* VTMeasurePresenter_8238.m */,
 				BF849E961DEC0CB300BBC471 /* VTMeasurePresenter_C052.h */,
 				BF849E971DEC0CB300BBC471 /* VTMeasurePresenter_C052.m */,
+				A25E117020BBD3D000D4092A /* VTMeasurePresenter_MS2225A.h */,
+				A25E117120BBD3D000D4092A /* VTMeasurePresenter_MS2225A.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1425,16 +1438,6 @@
 		BF849E9B1DEC0CB300BBC471 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF4ABEE91CCC55A600648AED /* VTDialView.h */,
-				BF4ABEEA1CCC55A600648AED /* VTDialView.m */,
-				BF849ECE1DEC20D700BBC471 /* VTDialView_450B.h */,
-				BF849ECF1DEC20D700BBC471 /* VTDialView_450B.m */,
-				BF849ED21DEC226000BBC471 /* VTDialView_453B.h */,
-				BF849ED31DEC226000BBC471 /* VTDialView_453B.m */,
-				BF849E9C1DEC0CB300BBC471 /* VTDialView_8238.h */,
-				BF849E9D1DEC0CB300BBC471 /* VTDialView_8238.m */,
-				BF849E9E1DEC0CB300BBC471 /* VTDialView_C052.h */,
-				BF849E9F1DEC0CB300BBC471 /* VTDialView_C052.m */,
 				BF849ECA1DEC0F5800BBC471 /* VTMeasureView.h */,
 				BF849ECB1DEC0F5800BBC471 /* VTMeasureView.m */,
 				BF849EA01DEC0CB300BBC471 /* VTMeasureView_450B.h */,
@@ -1447,6 +1450,21 @@
 				BF849EA91DEC0CB300BBC471 /* VTMeasureView_C052.h */,
 				BF849EAA1DEC0CB300BBC471 /* VTMeasureView_C052.m */,
 				BF849EAB1DEC0CB300BBC471 /* VTMeasureView_C052.xib */,
+				A25E117620BBD61800D4092A /* VTMeasureView_MS2225A.h */,
+				A25E117720BBD61800D4092A /* VTMeasureView_MS2225A.m */,
+				A25E117B20BBE72B00D4092A /* VTMeasureView_MS2225A.xib */,
+				BF4ABEE91CCC55A600648AED /* VTDialView.h */,
+				BF4ABEEA1CCC55A600648AED /* VTDialView.m */,
+				BF849ECE1DEC20D700BBC471 /* VTDialView_450B.h */,
+				BF849ECF1DEC20D700BBC471 /* VTDialView_450B.m */,
+				BF849ED21DEC226000BBC471 /* VTDialView_453B.h */,
+				BF849ED31DEC226000BBC471 /* VTDialView_453B.m */,
+				BF849E9C1DEC0CB300BBC471 /* VTDialView_8238.h */,
+				BF849E9D1DEC0CB300BBC471 /* VTDialView_8238.m */,
+				BF849E9E1DEC0CB300BBC471 /* VTDialView_C052.h */,
+				BF849E9F1DEC0CB300BBC471 /* VTDialView_C052.m */,
+				A25E117D20BBED9200D4092A /* VTDialView_MS2225A.h */,
+				A25E117E20BBED9200D4092A /* VTDialView_MS2225A.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1950,6 +1968,7 @@
 				BF5AC9DF1D9BBBFE00041DD5 /* 450_2.gif in Resources */,
 				BF319B6A1CD2633F0054BAF4 /* MJRefresh.bundle in Resources */,
 				BF12FA091CB695050009A586 /* Main.storyboard in Resources */,
+				A25E117C20BBE72B00D4092A /* VTMeasureView_MS2225A.xib in Resources */,
 				BF849EC41DEC0CB300BBC471 /* VTMeasureView_8238.xib in Resources */,
 				BFB824731DA8D10400920184 /* warn.mp3 in Resources */,
 				BFAAC37B1D99236C00EF9BC9 /* Speech.plist in Resources */,
@@ -2117,6 +2136,7 @@
 				BF319B691CD2633F0054BAF4 /* MJRefreshStateHeader.m in Sources */,
 				BF849EB01DEC0CB300BBC471 /* VTMeasurePresenter_8238.m in Sources */,
 				BF319B681CD2633F0054BAF4 /* MJRefreshNormalHeader.m in Sources */,
+				A25E117220BBD3D000D4092A /* VTMeasurePresenter_MS2225A.m in Sources */,
 				BF88C39E1D9C05930038C90A /* CPTPlotSymbol.m in Sources */,
 				B5B1F5981E23457900A7D9B8 /* CrcTool.m in Sources */,
 				BF88C3721D9C05930038C90A /* CPTLegendEntry.m in Sources */,
@@ -2193,6 +2213,7 @@
 				BFBBBE2A1CBEB21100817DCB /* VTBlePersistTool.m in Sources */,
 				BF88C32E1D9C05930038C90A /* _CPTPlainBlackTheme.m in Sources */,
 				BF319B6B1CD2633F0054BAF4 /* MJRefreshConst.m in Sources */,
+				A25E117F20BBED9200D4092A /* VTDialView_MS2225A.m in Sources */,
 				BF88C3261D9C05930038C90A /* _CPTFillColor.m in Sources */,
 				BF88C3C81D9C06BC0038C90A /* MyPlot.m in Sources */,
 				BFBF6E4C1CC3A16A0083235B /* EverLineModel.m in Sources */,
@@ -2261,6 +2282,7 @@
 				BF0E26361CBB5E1E005E876C /* VTBleButtonModel.m in Sources */,
 				BF88C3341D9C05930038C90A /* _CPTStocksTheme.m in Sources */,
 				BF12FA001CB695050009A586 /* main.m in Sources */,
+				A25E117820BBD61800D4092A /* VTMeasureView_MS2225A.m in Sources */,
 				BF12FA0C1CB695050009A586 /* Multimeter.xcdatamodeld in Sources */,
 				BF849EBE1DEC0CB300BBC471 /* VTMeasureView_453B.m in Sources */,
 				BF88BB2C1D9781D1001CBC19 /* VTDisplaySettingVC.m in Sources */,
@@ -2691,7 +2713,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Multimeter/Multimeter.pch;
 				INFOPLIST_FILE = Multimeter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytest.2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -2718,7 +2740,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Multimeter/Multimeter.pch;
 				INFOPLIST_FILE = Multimeter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mytest.2018;
 				PRODUCT_NAME = "$(TARGET_NAME)";

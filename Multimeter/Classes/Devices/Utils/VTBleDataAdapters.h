@@ -51,5 +51,12 @@
 @interface VTBleDataAdapter_8238 : NSObject  <VTBleDataAdapter>
 @end
 
-@interface VTBleDataAdapter_2225A : NSObject <VTBleDataAdapter>
+// 2.0版本新增
+@interface VTBleDataAdapter_MS2225A : NSObject <VTBleDataAdapter>
+@end
+
+@interface VTBleDataAdapter_MS6252D : NSObject <VTBleDataAdapter>
+@end
+
+@interface VTBleDataAdapter_MS6612D : NSObject <VTBleDataAdapter>
 @end

@@ -32,6 +32,7 @@ char bcd2Char(Byte byte) {
 }
 
 @implementation VTBleDataParser {
+    NSInteger _fullDataLength;
     NSInteger _deviceModel;
     Byte _dialState;
     
@@ -333,7 +334,7 @@ char bcd2Char(Byte byte) {
 #pragma mark - Public methods
 - (BOOL)isDataValid:(unsigned char*)bytes {
 #if !TARGET_IPHONE_SIMULATOR
-    if (bytes[0]!=0x55 || bytes[1]!=0x12) {
+    if (bytes[0] != 0x55 || bytes[1] != 0x12) {
         return NO;
     }
     unsigned char crc8 = CRC8_Table(bytes, 0x11);
@@ -348,17 +349,17 @@ char bcd2Char(Byte byte) {
 - (BOOL)trimInvalidData:(NSMutableData *)data {
     unsigned char *bytes=(unsigned char*)[data bytes];
     int length = (int)data.length;
-    if (length<0x12) return NO;
+    if (length < 0x12) return NO;
     
-    int i=0;
-    for (i=0; i<=length-0x12; i++) {
+    int i = 0;
+    for (i = 0; i <= length - 0x12; i++) {
         if ([self isDataValid:bytes+i])
             break;
     }
-    if (i>length-0x12) {
+    if (i > length - 0x12) {
         return NO;
     }
-    if (i>0) {
+    if (i > 0) {
         [data replaceBytesInRange:NSMakeRange(0, i) withBytes:NULL length:0];
     }
     return YES;
@@ -368,11 +369,11 @@ char bcd2Char(Byte byte) {
 - (int)parseWithData:(NSData *)data {
 //    VTLog(@"Log data: %@", data);
     int length= (int)data.length;
-    unsigned char *test=(unsigned char*)[data bytes];
+    unsigned char *test=(unsigned char *)[data bytes];
     NSMutableData *auxData = nil;
     
     //新包有效,屏蔽缓冲区中的老包
-    if (length>=0x12) {
+    if (length >= 0x12) {
         if ([self isDataValid:test]) {
             [_bufferData replaceBytesInRange:NSMakeRange(0, _bufferData.length) withBytes:NULL length:0];
             [_bufferData setLength:0];

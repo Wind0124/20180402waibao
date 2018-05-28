@@ -575,7 +575,8 @@ extern int g_state;
 
 @end
 
-@implementation VTBleDataAdapter_2225A
+#pragma mark - 2.0版本新增
+@implementation VTBleDataAdapter_MS2225A
 
 @synthesize parser = _parser;
 
