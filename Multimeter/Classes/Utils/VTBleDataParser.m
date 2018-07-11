@@ -245,16 +245,17 @@ char bcd2Char(Byte byte) {
     return tempString;
 }
 
+// Wind 解析主LCD数据
 - (void)parseLCDData: (NSData*)data {
     char *pdata = (char*)data.bytes;
     int temp = 0;
     
     temp = *pdata++;
     memset(&_lcddata, 0, sizeof(_lcddata));
-    //0 low
+    //0 low 数码管低两位
     _lcddata.number.low = temp;
     
-    //1 high
+    //1 high 数码管高两位
     temp = *pdata++;
     _lcddata.number.high = temp;
     
@@ -265,8 +266,9 @@ char bcd2Char(Byte byte) {
         _lcddata.overload = NO;
     }
     
-    //2 sign1
+    //2 Data11
     temp = *pdata++;
+    NSLog(@"Wind %i",temp);
     _lcddata.auto_range = GETBIT(temp, 0);
     _lcddata.max_min = GETBIT(temp, 1);
     _lcddata.min = GETBIT(temp, 2);
@@ -276,7 +278,7 @@ char bcd2Char(Byte byte) {
     _lcddata.number.dot[2] = GETBIT(temp, 6);
     _lcddata.number.negative = GETBIT(temp, 7);
     
-    //3 sign2
+    //3 Data12
     temp = *pdata++;
     _lcddata.A = GETBIT(temp, 0);
     _lcddata.F = GETBIT(temp, 1);
@@ -287,7 +289,7 @@ char bcd2Char(Byte byte) {
     _lcddata.diode = GETBIT(temp, 6);
     _lcddata.low_battery = GETBIT(temp, 7);
     
-    //4 sign3
+    //4 Data13
     temp = *pdata++;
     _lcddata.percent = GETBIT(temp, 0);
     _lcddata.Hz = GETBIT(temp, 1);
@@ -298,7 +300,7 @@ char bcd2Char(Byte byte) {
     _lcddata.ac = GETBIT(temp, 6);
     _lcddata.dc = GETBIT(temp, 7);
     
-    //5 sign4
+    //5 Data14
     temp = *pdata++;
     _lcddata.hFE = GETBIT(temp, 0);
     _lcddata.auto_power_off = GETBIT(temp, 1);
@@ -317,6 +319,177 @@ char bcd2Char(Byte byte) {
     }
     _lastSegment = _lcddata;
     _haveSaveOneSegment = YES;
+    
+    //6 Data15
+    temp = *pdata++;
+    _lcddata.Wh = GETBIT(temp, 0);
+    _lcddata.VAr = GETBIT(temp, 1);
+    _lcddata.VA = GETBIT(temp, 2);
+    _lcddata.inrush = GETBIT(temp, 3);
+    _lcddata.LOZ = GETBIT(temp, 4);
+    _lcddata.warning = GETBIT(temp, 5);
+    _lcddata.TRMS = GETBIT(temp, 6);
+    _lcddata.A_HOLD = GETBIT(temp, 7);
+    
+    //7 Data16
+    temp = *pdata++;
+    _lcddata.phaseSign = GETBIT(temp, 0);
+    _lcddata.THD = GETBIT(temp, 1);
+    _lcddata.LAG = GETBIT(temp, 2);
+    _lcddata.LEAD = GETBIT(temp, 3);
+    _lcddata.COS = GETBIT(temp, 4);
+    _lcddata.SIN = GETBIT(temp, 5);
+    _lcddata.PHASE = GETBIT(temp, 6);
+    _lcddata.PEAK = GETBIT(temp, 7);
+    
+    //8 Data17
+    temp = *pdata++;
+    _lcddata.MEM = GETBIT(temp, 0);
+    _lcddata.REC = GETBIT(temp, 1);
+    _lcddata.MENU = GETBIT(temp, 2);
+    _lcddata.RAN = GETBIT(temp, 3);
+    _lcddata.battery25 = GETBIT(temp, 4);
+    _lcddata.battery50 = GETBIT(temp, 5);
+    _lcddata.battery75 = GETBIT(temp, 6);
+    _lcddata.battery100 = GETBIT(temp, 7);
+
+    //9 Data18 保留
+}
+
+// Wind 解析副一LCD数据
+- (void)parseLCDData1:(NSData *)data {
+    char *pdata = (char*)data.bytes;
+    int temp = 0;
+    
+    temp = *pdata++;
+    memset(&_lcddata1, 0, sizeof(_lcddata1));
+    //0 low 数码管低两位 Data19
+    _lcddata1.number.low = temp;
+    
+    //1 high 数码管高两位 Data20
+    temp = *pdata++;
+    _lcddata1.number.high = temp;
+    
+    
+    if((_lcddata1.number.high == 0xFF)&&(_lcddata1.number.low == 0xFF)){
+        _lcddata1.overload = YES;
+    } else {
+        _lcddata1.overload = NO;
+    }
+    
+    //2 Data21
+    temp = *pdata++;
+    NSLog(@"Wind %i",temp);
+    _lcddata1.DIF = GETBIT(temp, 0);
+    _lcddata1.max_min = GETBIT(temp, 1);
+    _lcddata1.min = GETBIT(temp, 2);
+    _lcddata1.max = GETBIT(temp, 3);
+    _lcddata1.number.dot[0] = GETBIT(temp, 4);
+    _lcddata1.number.dot[1] = GETBIT(temp, 5);
+    _lcddata1.number.dot[2] = GETBIT(temp, 6);
+    _lcddata1.number.negative = GETBIT(temp, 7);
+    
+    //3 Data22
+    temp = *pdata++;
+    _lcddata1.A = GETBIT(temp, 0);
+    _lcddata1.F = GETBIT(temp, 1);
+    _lcddata1.m = GETBIT(temp, 2);
+    _lcddata1.u = GETBIT(temp, 3);
+    _lcddata1.n = GETBIT(temp, 4);
+//    _lcddata1.speaker = GETBIT(temp, 5);
+//    _lcddata1.diode = GETBIT(temp, 6);
+    _lcddata1.low_battery = GETBIT(temp, 7);
+    
+    //4 Data23
+    temp = *pdata++;
+    _lcddata1.percent = GETBIT(temp, 0);
+    _lcddata1.Hz = GETBIT(temp, 1);
+    _lcddata1.res = GETBIT(temp, 2);
+    _lcddata1.M = GETBIT(temp, 3);
+    _lcddata1.k = GETBIT(temp, 4);
+    _lcddata1.V = GETBIT(temp, 5);
+    _lcddata1.ac = GETBIT(temp, 6);
+    _lcddata1.dc = GETBIT(temp, 7);
+    
+    //5 Data24
+    temp = *pdata++;
+    _lcddata1.H__ = GETBIT(temp, 0);
+    _lcddata1.Wh = GETBIT(temp, 1);
+    _lcddata1.VAr = GETBIT(temp, 2);
+    _lcddata1.VA = GETBIT(temp, 3);
+    _lcddata1.F0 = GETBIT(temp, 4);
+    _lcddata1.C0 = GETBIT(temp, 5);
+    _lcddata1.H__F = GETBIT(temp, 6);
+    _lcddata1.H__R = GETBIT(temp, 7);
+    
+}
+
+// Wind 解析副二LCD数据
+- (void)parseLCDData2:(NSData *)data {
+    char *pdata = (char*)data.bytes;
+    int temp = 0;
+    
+    temp = *pdata++;
+    memset(&_lcddata2, 0, sizeof(_lcddata2));
+    //0 low 数码管低两位 Data25
+    _lcddata2.number.low = temp;
+    
+    //1 high 数码管高两位 Data26
+    temp = *pdata++;
+    _lcddata2.number.high = temp;
+    
+    
+    if((_lcddata2.number.high == 0xFF)&&(_lcddata2.number.low == 0xFF)){
+        _lcddata2.overload = YES;
+    } else {
+        _lcddata2.overload = NO;
+    }
+    
+    //2 Data27
+    temp = *pdata++;
+    NSLog(@"Wind %i",temp);
+//    _lcddata2.DIF = GETBIT(temp, 0);
+    _lcddata2.max_min = GETBIT(temp, 1);
+    _lcddata2.min = GETBIT(temp, 2);
+    _lcddata2.max = GETBIT(temp, 3);
+    _lcddata2.number.dot[0] = GETBIT(temp, 4);
+    _lcddata2.number.dot[1] = GETBIT(temp, 5);
+    _lcddata2.number.dot[2] = GETBIT(temp, 6);
+    _lcddata2.number.negative = GETBIT(temp, 7);
+    
+    //3 Data28
+    temp = *pdata++;
+    _lcddata2.A = GETBIT(temp, 0);
+    _lcddata2.F = GETBIT(temp, 1);
+    _lcddata2.m = GETBIT(temp, 2);
+    _lcddata2.u = GETBIT(temp, 3);
+    _lcddata2.n = GETBIT(temp, 4);
+//    _lcddata2.speaker = GETBIT(temp, 5);
+//    _lcddata2.diode = GETBIT(temp, 6);
+//    _lcddata2.low_battery = GETBIT(temp, 7);
+    
+    //4 Data29
+    temp = *pdata++;
+    _lcddata2.percent = GETBIT(temp, 0);
+    _lcddata2.Hz = GETBIT(temp, 1);
+    _lcddata2.res = GETBIT(temp, 2);
+    _lcddata2.M = GETBIT(temp, 3);
+    _lcddata2.k = GETBIT(temp, 4);
+    _lcddata2.V = GETBIT(temp, 5);
+    _lcddata2.ac = GETBIT(temp, 6);
+    _lcddata2.dc = GETBIT(temp, 7);
+    
+    //5 Data30
+    temp = *pdata++;
+//    _lcddata2.H__ = GETBIT(temp, 0);
+    _lcddata2.Wh = GETBIT(temp, 1);
+    _lcddata2.VAr = GETBIT(temp, 2);
+    _lcddata2.VA = GETBIT(temp, 3);
+    _lcddata2.F0 = GETBIT(temp, 4);
+    _lcddata2.C0 = GETBIT(temp, 5);
+//    _lcddata2.H__F = GETBIT(temp, 6);
+//    _lcddata2.H__R = GETBIT(temp, 7);
+    
 }
 
 - (void)parseButtonData:(NSData *)data {
@@ -334,11 +507,12 @@ char bcd2Char(Byte byte) {
 #pragma mark - Public methods
 - (BOOL)isDataValid:(unsigned char*)bytes {
 #if !TARGET_IPHONE_SIMULATOR
-    if (bytes[0] != 0x55 || bytes[1] != 0x12) {
+    // Wind 版本2的长度为32，即0x20
+    if (bytes[0] != 0x55 || bytes[1] != 0x20) {
         return NO;
     }
-    unsigned char crc8 = CRC8_Table(bytes, 0x11);
-    if (crc8 != bytes[0x11])
+    unsigned char crc8 = CRC8_Table(bytes, 0x1F);
+    if (crc8 != bytes[0x1F])
         return NO;
     return YES;
 #else
@@ -349,14 +523,15 @@ char bcd2Char(Byte byte) {
 - (BOOL)trimInvalidData:(NSMutableData *)data {
     unsigned char *bytes=(unsigned char*)[data bytes];
     int length = (int)data.length;
-    if (length < 0x12) return NO;
+    // Wind 版本2长度为32
+    if (length < 0x20) return NO;
     
     int i = 0;
-    for (i = 0; i <= length - 0x12; i++) {
+    for (i = 0; i <= length - 0x20; i++) {
         if ([self isDataValid:bytes+i])
             break;
     }
-    if (i > length - 0x12) {
+    if (i > length - 0x20) {
         return NO;
     }
     if (i > 0) {
@@ -365,7 +540,24 @@ char bcd2Char(Byte byte) {
     return YES;
 }
 
-
+// Wind 解析数据
+//0   1  2   3   4   5   6
+//55 20  02  77  22  25   01
+//
+//7   8
+//26 ff
+//
+//9   10   11   12  13   14  15   16   17  18
+//00  00   00   01  40   02  00   00   00  00
+//
+//19   20   21   22  23   24
+//fe   ff   00   00  00   00
+//
+//25   26  27  28  29  30
+//fe   ff  00  00  00  00
+//
+//31
+//28
 - (int)parseWithData:(NSData *)data {
 //    VTLog(@"Log data: %@", data);
     int length= (int)data.length;
@@ -373,7 +565,7 @@ char bcd2Char(Byte byte) {
     NSMutableData *auxData = nil;
     
     //新包有效,屏蔽缓冲区中的老包
-    if (length >= 0x12) {
+    if (length >= 0x20) {
         if ([self isDataValid:test]) {
             [_bufferData replaceBytesInRange:NSMakeRange(0, _bufferData.length) withBytes:NULL length:0];
             [_bufferData setLength:0];
@@ -384,27 +576,51 @@ char bcd2Char(Byte byte) {
     if (![self trimInvalidData:_bufferData]) {
         return NO;
     }
-    auxData = [NSMutableData dataWithBytes:_bufferData.bytes length:0x12];
-    [_bufferData replaceBytesInRange:NSMakeRange(0, 0x12) withBytes:NULL length:0];
+    auxData = [NSMutableData dataWithBytes:_bufferData.bytes length:0x20];
+    [_bufferData replaceBytesInRange:NSMakeRange(0, 0x20) withBytes:NULL length:0];
+    // Wind 实际数据
     test = (unsigned char*)auxData.bytes;
+    NSLog(@"Wind 一个完整数据:%@",auxData);
     
-    Byte tempData[16] = {0};
-    for(int i = 0; i < 8; i++)
-        tempData[i] = test[i+9];
     
+    // Wind 产品型号
     _deviceModel = (test[4]<<8)+test[5];
+    NSLog(@"Wind 产品型号：%lx",_deviceModel);
     _adapter = [VTDeviceMgr adapterForModel:_deviceModel];
     _adapter.parser = self;
     
-    NSData *lcdData = [NSData dataWithBytes:tempData length:8];
+    // Wind 主LCD数据 第9位到第18位 共10位
+    Byte tempData[16] = {0};
+    for(int i = 0; i < 10; i++)
+        tempData[i] = test[i+9];
+    NSData *lcdData = [NSData dataWithBytes:tempData length:10];
+    NSLog(@"Wind LCD Data:%@",lcdData);
     [self parseLCDData:lcdData];
     
+    // Wind 副一LCD数据 第19位到24位 共6位
+    Byte tempData1[16] = {0};
+    for(int i = 0; i < 6; i++)
+        tempData1[i] = test[i+19];
+    NSData *lcdData1 = [NSData dataWithBytes:tempData1 length:6];
+    NSLog(@"Wind 副一LCD Data:%@",lcdData1);
+    [self parseLCDData1:lcdData1];
+    
+    // Wind 副二LCD数据 第25位到30位 共6位
+    Byte tempData2[16] = {0};
+    for(int i = 0; i < 6; i++)
+        tempData2[i] = test[i+25];
+    NSData *lcdData2 = [NSData dataWithBytes:tempData2 length:6];
+    NSLog(@"Wind 副二LCD Data:%@",lcdData2);
+    [self parseLCDData2:lcdData2];
+    
+    // Wind 按键信息 第8位
     NSData *buttonData = [NSData dataWithBytes:&test[8] length:1];
     [self parseButtonData:buttonData];
-    
+    // Wind 播盘信息 第7位
     NSData *dialData = [NSData dataWithBytes:&test[7] length:1];
     [self parseDialData:dialData];
     
+#warning 该方法未知作用
     if (_adapter && [_adapter respondsToSelector:@selector(afterParse)]) {
         [_adapter afterParse];
     }

@@ -163,9 +163,10 @@
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary<NSString *, id> *)advertisementData RSSI:(NSNumber *)RSSI {
     
-//    NSLog(@"peripheral name: %@, %@", peripheral.name, advertisementData[@"kCBAdvDataLocalName"]);
+    NSLog(@"peripheral name: %@, %@", peripheral.name, advertisementData[@"kCBAdvDataLocalName"]);
 #ifndef TEST_BLE_DISCOVER
-    if (![peripheral.name isEqualToString:kDeviceIdentifier]) return;
+    // Wind 新设备的名称不一样
+    if (![kDeviceIdentifier2 hasSuffix:peripheral.name]) return;
 #endif
     
     peripheral.scanRSSI = RSSI;

@@ -49,6 +49,7 @@
 
 // 业务相关
 #define kDeviceIdentifier                           @"bde spp dev"
+#define kDeviceIdentifier2                          @"MS2225D"
 #define kDeviceNotifyServiceUUID                    @"FFB0"
 #define kDeviceInfoServiceUUID                      @"180A"
 

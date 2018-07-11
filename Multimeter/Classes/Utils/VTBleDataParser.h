@@ -31,7 +31,7 @@ typedef struct {
     int Hz;
     int ncv_non_contact_voltage_detection;//非接触测量
     int speaker;//蜂鸣器 代表短路测试功能
-    int diode;
+    int diode;// 二极管
     
     //交流直流
     int ac;
@@ -40,7 +40,7 @@ typedef struct {
     //量词
     int n; int u; int m;//电容
     int M; int k; //电阻和频率
-    int percent;
+    int percent;// 占空比
     
     
     //温度
@@ -65,6 +65,45 @@ typedef struct {
     
     // 辅助字段
     int overload;
+    
+    // Wind 版本2主LCD新加字段 Data15
+    int Wh;// 有功功率
+    int VAr;// 无功功率
+    int VA;// 视在功率
+    int inrush;// 电流浪涌
+    int LOZ;//低通滤波
+    int warning;//危险警示符
+    int TRMS;// TRMS 标志
+    int A_HOLD; // A-HOLD 标志
+    
+    // Wind 版本2主LCD新加字段 Data16
+    int phaseSign; //相位“度”符号
+    int THD;
+    int LAG;
+    int LEAD;
+    int COS;
+    int SIN;
+    int PHASE;
+    int PEAK;
+    
+    // Wind 版本2主LCD新加字段 Data17
+    int MEM;// 存储标志
+    int REC;//Recode 标志
+    int MENU;// 手动标志
+    int RAN;// 手动标志
+    int battery25;// 电量25
+    int battery50;// 电量50
+    int battery75;// 电量75
+    int battery100;// 电量100
+
+    // Wind 版本2副LCD一新加字段 Data21
+    int DIF;// 差值
+    // Wind 版本2副LCD一新加字段 Data24
+    int H__;// 谐波
+    int H__F;// 谐波畸变率
+    int H__R;//谐波畸变率
+    
+    
 } LCDSegment;
 
 
@@ -72,6 +111,8 @@ typedef struct {
 @interface VTBleDataParser : NSObject {
 @public
     LCDSegment _lcddata;
+    LCDSegment _lcddata1;
+    LCDSegment _lcddata2;
     Byte _buttonState;
 }
 
